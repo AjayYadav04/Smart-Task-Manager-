@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/navigation_dashboard"
+        android:icon="@drawable/ic_dash_board"
+        android:title="Dashboard" />
+
+    <item
+        android:id="@+id/navigation_setting"
+        android:icon="@drawable/ic_setting"
+    android:title="Setting" />
+
+</menu>

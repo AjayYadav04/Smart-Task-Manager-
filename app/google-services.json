@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "28254523439",
+    "project_id": "smart-task-manager-5f9fc",
+    "storage_bucket": "smart-task-manager-5f9fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:28254523439:android:22ac882ed9352a260ef6da",
+        "android_client_info": {
+          "package_name": "com.example.smarttaskmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoquauN6iCgCv5ZxsR5lnw75Rk2kVskNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

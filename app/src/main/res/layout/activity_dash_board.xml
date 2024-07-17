@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.DashBoardActivit">
+
+    <LinearLayout
+        android:id="@+id/llTaskStatistics"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed Tasks"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp" />
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chartCompletedTasks"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pending Tasks"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp" />
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/chartPendingTasks"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Priority Distribution"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp" />
+        <com.github.mikephil.charting.charts.LineChart
+            android:id="@+id/chartTaskPriorityDistribution"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llUpcomingTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llTaskStatistics"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Upcoming Tasks"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvUpcomingTasks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llPerformanceInsights"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/llUpcomingTasks"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Performance Insights"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_margin="8dp" />
+
+        <TextView
+            android:id="@+id/tvPerformanceInsights"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Here will be displayed the insights and suggestions based on user behavior and task completion trends."
+            android:layout_margin="8dp" />
+    </LinearLayout>
+</RelativeLayout>

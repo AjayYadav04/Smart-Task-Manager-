@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "286941967506",
+    "project_id": "smart-task-manager-b3b7b",
+    "storage_bucket": "smart-task-manager-b3b7b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286941967506:android:db5575973379c9e2a6624b",
+        "android_client_info": {
+          "package_name": "com.ajay.smarttaskmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2RjaPY6QCPiNRt0vxHYvu-yv7lceuvNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:286941967506:android:700cae8b584697f9a6624b",
+        "android_client_info": {
+          "package_name": "com.example.smarttaskmanager"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2RjaPY6QCPiNRt0vxHYvu-yv7lceuvNo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
