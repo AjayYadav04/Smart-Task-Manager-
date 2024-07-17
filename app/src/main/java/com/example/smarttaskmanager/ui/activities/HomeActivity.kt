@@ -37,9 +37,9 @@ class HomeActivity : BaseActivity(), TaskAdapter.OnTaskItemClickListener {
                 }
 
                 R.id.navigation_dashboard ->{
-                    val intent = Intent(this, DashBoardActivity::class.java)
-                    intent.putExtra("HEADER", HeaderTitle.Dashboard.toString())
-                    startActivity(intent)
+//                    val intent = Intent(this, DashBoardActivity::class.java)
+//                    intent.putExtra("HEADER", HeaderTitle.Dashboard.toString())
+//                    startActivity(intent)
                     true
                 }
                 R.id.navigation_setting -> {
