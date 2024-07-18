@@ -33,11 +33,10 @@ class MainActivity : AppCompatActivity() {
         }
         setContentView(R.layout.activity_main)
         setContext(this.applicationContext)
-
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this, arrayOf(Manifest.permission.CAMERA), CAMERA_PERMISSION_REQUEST_CODE)
         } else {
-            handleBiometricAuthentication()
+                handleBiometricAuthentication()
         }
     }
 
@@ -79,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                 override fun onAuthenticationSucceeded(result: BiometricPrompt.AuthenticationResult) {
                     super.onAuthenticationSucceeded(result)
                     showMessage("Authentication succeeded!")
-                    startActivity(Intent(this@MainActivity, HomeActivity::class.java))
+                   startHomeActivity()
                 }
 
                 override fun onAuthenticationFailed() {
@@ -103,5 +102,9 @@ class MainActivity : AppCompatActivity() {
                     BiometricManager.Authenticators.DEVICE_CREDENTIAL
         )
         return canAuthenticate == BiometricManager.BIOMETRIC_SUCCESS
+    }
+    private fun startHomeActivity() {
+        startActivity(Intent(this, HomeActivity::class.java))
+        finish()
     }
 }

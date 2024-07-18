@@ -26,18 +26,18 @@ class SettingActivity : BaseActivity() {
         val versionTextView: TextView = findViewById(R.id.version_text_view)
 
         // Set the switch state based on the current night mode
+        var mode : String = ""
         val nightMode = AppCompatDelegate.getDefaultNightMode()
         nightModeSwitch.isChecked = nightMode == AppCompatDelegate.MODE_NIGHT_YES
-
         nightModeSwitch.setOnCheckedChangeListener { _, isChecked ->
-            if (isChecked) {
+            val currentNightMode = sharedPreferences.getBoolean("night_mode_enabled", false)
+            if (isChecked && !currentNightMode) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
                 sharedPreferences.edit().putBoolean("night_mode_enabled", true).apply()
-            } else {
+            } else if (!isChecked && currentNightMode) {
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
                 sharedPreferences.edit().putBoolean("night_mode_enabled", false).apply()
             }
-            recreate()
         }
 
         notificationsSwitch.isChecked = sharedPreferences.getBoolean("notifications_enabled", false)
